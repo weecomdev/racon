@@ -1,0 +1,924 @@
+img {
+    max-width: 100%;
+}
+
+.btn-default {
+    margin: 0 auto;
+    display: table;
+    text-decoration: none;
+    font-family: Panton;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    text-transform: uppercase;
+    color: #FFF;
+    padding: 21px;
+    min-width: 242px;
+    border-radius: 10px;
+    background-color: #006DC1;
+    transition: .3s ease-in;
+}
+
+.btn-default:hover {
+    transition: .3s ease-in;
+    background-color: #00AEEB;
+}
+
+/* body {
+    background: url('../img/Racon.jpg') top center no-repeat;
+} */
+
+header {
+    background: linear-gradient(180deg, #00152E -29.3%, rgba(0, 21, 46, 0) 77.73%);
+    position: absolute;
+    z-index: 99;
+    margin: 0 auto;
+    width: 100%;
+}
+
+header .navbar.navbar-expand-lg {
+    max-width: 1430px;
+    margin: 0 auto;
+    padding: 21px 0;
+}
+
+header .collapse.navbar-collapse {
+    justify-content: end;
+}
+
+header .navbar-nav {
+    gap: 41px;
+    margin-right: 70px;
+}
+
+header .navbar-nav .nav-link {
+    font-family: Panton;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #FFFFFF;
+    transition: .3s ease-in;
+}
+
+header .navbar-nav .nav-link:hover {
+    transition: .3s ease-in;
+    color: #F9D447;
+}
+
+header .navbar-nav .nav-link.active {
+    color: #F9D447;
+}
+
+header .navbar .btn-header {
+    display: inline-block;
+    text-decoration: none;
+    font-family: Panton;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #E58538;
+    padding: 19px 37px;
+    margin-right: 63px;
+    border-radius: 10px;
+    background-color: #F9D447;
+    transition: .3s ease;
+}
+
+header .navbar .btn-header:hover {
+    transition: .3s ease;
+    color: #F9D447;
+    background-color: #E58538;
+}
+
+.section-form {
+    position: relative;
+    padding: 138px 0px 37px 0px;
+    min-height: 964px;
+    background: #00AEEB;
+}
+
+.section-form .mulher-banner {
+    position: absolute;
+    top: -2px;
+    right: 0;
+    z-index: 1;
+}
+
+.section-form .seta-home {
+    position: absolute;
+    top: 25px;
+    left: -79px;
+}
+
+.section-form h1 {
+    font-family: Panton;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 52px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #202242;
+    margin-bottom: 24px;
+}
+
+.section-form h1 strong {
+    font-weight: 800;
+}
+
+.section-form p {
+    font-family: Panton;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #202242;
+}
+
+.section-form p strong {
+    font-weight: 800;
+}
+
+.section-form .form {
+    padding: 28px 46px;
+    margin-top: 5px;
+    box-shadow: 0px 4px 50px 7px #0000001A;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    position: absolute;
+    max-width: 526px;
+    z-index: 2;
+}
+
+.section-form .form p {
+    font-family: Panton;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #202242;
+    margin-bottom: 19px;
+}
+
+.section-form .form p strong {
+    font-weight: 800;
+}
+
+.section-form .form input,
+.section-form .form select {
+    width: 100%;
+    padding: 19px 27px;
+    font-family: Panton;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.6px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #283561;
+    border: solid 0.5px #767676;
+    border-radius: 5px;
+    margin-bottom: 6px;
+}
+
+.section-form .form input::placeholder {
+    font-family: Panton;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.6px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #283561;
+}
+
+.section-form .form select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("../img/seta-select.png");
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: 50%;
+}
+
+.section-form .form label {
+    font-family: Panton;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.6px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #283561;
+    margin-top: 15px;
+}
+
+/* .section-form .form .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 98vh;
+} */
+
+.section-form .form .range-box {
+    width: 100%;
+}
+
+.section-form .form .track {
+    /* -webkit-appearance: none; */
+    width: 100%;
+    height: 15px;
+    /* margin: 0;
+    background: transparent;
+    border: 1px solid darkblue; */
+    border-radius: 15px;
+    outline: none;
+}
+
+.section-form .form .track::-ms-track {
+    cursor: pointer;
+    color: transparent;
+    background: transparent;
+    border-color: transparent;
+}
+
+.section-form .form .track::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background: cyan;
+    border: 1px solid blue;
+    border-radius: 5px;
+}
+
+.section-form .form .track::-moz-range-thumb {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background: cyan;
+    border: 1px solid blue;
+    border-radius: 5px;
+}
+
+.section-form .form .track::-ms-thumb {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background: cyan;
+    border: 1px solid blue;
+    border-radius: 5px;
+}
+
+.section-form .form .scale {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: Panton;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #767676;
+}
+
+.section-form .form .point {
+    position: relative;
+}
+
+/* .section-form .form .point::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: calc(50% + 1px);
+    width: 1px;
+    height: 8px;
+    background-color: blue;
+} */
+
+.section-form .form .value-wrapper {
+    min-width: 120px;
+    margin-top: 30px;
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 18px;
+    color: darkblue;
+    border: 1px solid darkblue;
+    border-radius: 5px;
+}
+
+.section-form .form .value {
+    margin: 0;
+}
+
+.section-form .form .aceite {
+    display: flex;
+    margin-top: 24px;
+}
+
+.section-form .form .aceite input[type=checkbox] {
+    position: relative;
+    border: 2px solid #202242;
+    border-radius: 2px;
+    background: none;
+    cursor: pointer;
+    line-height: 0;
+    margin: 0 .6em 0 0;
+    outline: 0;
+    padding: 0 !important;
+    vertical-align: text-top;
+    height: 20px;
+    width: 20px;
+    -webkit-appearance: none;
+    opacity: .5;
+    width: 19px;
+    height: 19px;
+    border-radius: 100%;
+}
+
+.section-form .form .aceite input[type=checkbox]:hover {
+    opacity: 1;
+}
+
+.section-form .form .aceite input[type=checkbox]:checked {
+    background-color: #202242;
+    opacity: 1;
+}
+
+.section-form .form .aceite input[type=checkbox]:before {
+    content: '';
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    width: 4px;
+    height: 10px;
+    border: solid #FFF;
+    border-width: 0 2px 2px 0;
+    margin: -1px -1px 0 -1px;
+    transform: rotate(45deg) translate(-50%, -50%);
+    z-index: 2;
+}
+
+.section-form .form .aceite p {
+    font-family: Panton;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16.8px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #283561;
+    margin: 0;
+}
+
+.section-form .form .aceite p a {
+    display: inline-block;
+    text-decoration: none;
+    font-family: Panton;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 16.8px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #283561;
+}
+
+.section-form .form input[type=submit] {
+    font-family: Panton;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    text-transform: uppercase;
+    padding: 19px;
+    text-align: center;
+    margin-top: 21px;
+    border: none;
+    border-radius: 10px;
+    background-color: #006DC1;
+    color: #FFF;
+    transition: .3s ease-in;
+}
+
+.section-form .form input[type=submit]:hover {
+    transition: .3s ease-in;
+    background-color: #202242;
+}
+
+.sobre {
+    padding: 197px 0 120px 0;
+    position: relative;
+    background-color: #00152E;
+}
+
+.sobre h2 {
+    font-family: Panton;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 52px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #FFF;
+    margin-bottom: 23px;
+}
+
+.sobre h2 strong {
+    font-weight: 800;
+}
+
+.sobre p {
+    font-family: Panton;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #FFF;
+}
+
+.sobre p strong {
+    font-weight: 800;
+}
+
+.sobre .passos {
+    margin-top: 86px;
+    margin-left: 8px;
+}
+
+.sobre .passos p {
+    font-family: Panton;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 25px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-top: 36px;
+    max-width: 300px;
+}
+
+.sobre .passos .info-passo {
+    position: relative;
+}
+
+.sobre .passos .info-passo::after {
+    content: '';
+    position: absolute;
+    width: calc(100% - 73px);
+    height: 1px;
+    background-color: #c6c2c2;
+    top: 36px;
+    left: 73px;
+}
+
+.sobre .passos .col-lg-3:last-child .info-passo::after {
+    display: none;
+}
+
+.sobre .btn-default {
+    margin-top: 55px;
+}
+
+.sobre h2.second-title {
+    font-family: Panton;
+    font-size: 55px;
+    font-weight: 400;
+    line-height: 60px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #FFF;
+    margin-top: 126px;
+    margin-bottom: 105px;
+}
+
+.sobre h2.second-title strong {
+    font-weight: 600;
+}
+
+.sobre .card-info {
+    max-width: 90%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.sobre .card-info a img {
+    transition: all .3s ease;
+}
+
+.sobre .card-info a:hover img {
+    transition: all .3s ease;
+    margin-top: -10px;
+}
+
+.sobre .vetor1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.sobre .vetor2 {
+    position: absolute;
+    top: 31%;
+    right: 0;
+    z-index: 1;
+}
+
+.depoimentos {
+    padding: 104px 0 88px 0;
+    background-color: #0C1E41;
+}
+
+.depoimentos h2 {
+    font-family: Panton;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 70px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #FFF;
+}
+
+.depoimentos h2 strong {
+    font-family: Panton;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 70px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #00AEEB;
+}
+
+.depoimentos p {
+    font-family: Panton;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 45px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #FFF;
+}
+
+.depoimentos p a {
+    font-family: Panton;
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 45px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #00AEEB;
+    max-width: 765px;
+}
+
+.depoimentos .grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 102px;
+}
+
+.depoimentos .column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.depoimentos .image {
+    position: relative;
+}
+
+.depoimentos .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.depoimentos .image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+    border-radius: 0px 0px 20px 20px;
+    z-index: 1;
+}
+
+.depoimentos .image .texto {
+    position: absolute;
+    bottom: 30px;
+    display: flex;
+    gap: 108px;
+    padding: 0 50px;
+    z-index: 2;
+}
+
+.depoimentos .image .texto p {
+    max-width: 378px;
+    font-family: Panton;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #FFF;
+}
+
+.depoimentos .image .texto img {
+    max-width: 60px;
+    max-height: 60px;
+}
+
+.depoimentos .image-large {
+    width: 100%;
+    height: 530px;
+}
+
+.depoimentos .image-small {
+    width: 100%;
+    height: 326px;
+}
+
+.depoimentos .btn-default {
+    margin-top: 108px;
+}
+
+.numeros {
+    padding: 85px 0 55px 0;
+    position: relative;
+    overflow: hidden;
+    background-color: #283561;
+}
+
+.numeros .frase {
+    white-space: nowrap;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 50px;
+    font-family: Panton;
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 52px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #FFFFFF;
+    z-index: 2;
+}
+
+.numeros .rolling-text {
+    position: absolute;
+    animation: roll 15s linear infinite;
+}
+
+@keyframes roll {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.numeros .vetor3 {
+    position: absolute;
+    top: 18px;
+    left: 64px;
+    z-index: 1;
+}
+
+.numeros .homem {
+    position: absolute;
+    top: -22px;
+    left: 90px;
+    z-index: 3;
+}
+
+.numeros .informacoes {
+    margin-top: 83px;
+}
+
+.numeros .informacoes .card-numeros {
+    display: flex;
+    padding: 25px 37px;
+    justify-content: space-between;
+    max-width: 427px;
+    max-height: 142px;
+    position: relative;
+    z-index: 4;
+    border-radius: 10px;
+    background-color: #FFF;
+    margin-bottom: 9px;
+}
+
+.numeros .informacoes .card-numeros .infos .numero {
+    font-family: Panton;
+    font-size: 45px;
+    font-weight: 800;
+    line-height: 54px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #0C1E41;
+}
+
+.numeros .informacoes .card-numeros .infos p {
+    font-family: Panton;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #283561;
+    margin-top: 7px;
+    margin-left: 5px;
+    white-space: nowrap;
+}
+
+.numeros .informacoes .btn-default {
+    background-color: #F9D447;
+    color: #E58538;
+    margin-left: 110px;
+    min-width: 215px;
+    margin-top: 31px;
+    z-index: 5;
+    position: relative;
+}
+
+.numeros .informacoes .btn-default:hover {
+    color: #F9D447;
+    background-color: #E58538;
+}
+
+footer {
+    background-color: #1E6DB6;
+}
+
+footer .parte1 {
+    max-width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 69px 0 0 0;
+    background-color: #1E6DB6;
+}
+
+footer h3 {
+    font-family: Panton;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #00AEEB;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+
+footer a {
+    display: inline-block;
+    text-decoration: none;
+    font-family: Panton;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #FFF;
+    transition: .3s ease-in;
+}
+
+footer a:hover {
+    transition: .3s ease-in;
+    color: #F9D447;
+}
+
+footer a.logo-footer2 {
+    margin-top: 20px;
+}
+
+footer .redes {
+    display: flex;
+    gap: 28px;
+    transition: .3s ease-in;
+}
+
+footer .redes a:hover svg path {
+    fill: #F9D447;
+    transition: .3s ease-in;
+}
+
+footer .politica {
+    font-family: Panton;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 20.4px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #FFF;
+    text-align: center;
+    margin-top: 96px;
+    margin-bottom: 99px;
+    background-color: #1E6DB6;
+}
+
+footer .politica a {
+    text-decoration: underline;
+    font-family: Panton;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 20.4px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #FFF;
+    text-align: center;
+    transition: .3s ease-in;
+}
+
+footer .politica a:hover {
+    color: #F9D447;
+    transition: .3s ease-in;
+}
+
+footer .parte2 {
+    max-width: 75%;
+    margin: 0 auto;
+    display: flex;
+    gap: 90px;
+    padding: 18px 0;
+    background-color: #FFF;
+}
+
+footer .parte2 p {
+    max-width: 1160px;
+    font-family: Panton;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 25px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #0C1E41;
+    margin-bottom: 0;
+}
+
+footer .parte2 p a {
+    font-family: Panton;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 25px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #0C1E41;
+    margin-bottom: 0;
+    text-decoration: underline;
+    transition: .3s ease-in;
+}
+
+footer .parte2 p a:hover {
+    color: #1E6DB6;
+    transition: .3s ease-in;
+}

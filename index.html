@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Racon Consórcios</title>
+
+    <meta name="keywords" content="consórcios, investimentos, segurança">
+    <meta name="description" content="Consórcios para alcançar os seus objetivos com segurança!">
+    <meta property="og:image" content="https://webkita.com/gambar.jpg" />
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- slick slide -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- glightbox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <script src="assets/js/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/img/logo.png" alt="Logo Racon">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Início</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Como Funciona</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Modalidades</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Depoimentos</a>
+                            </li>
+                        </ul>
+                        <a class="btn-header" href="#">QUERO INVESTIR</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section-form">
+        <div class="container position-relative">
+            <img src="assets/img/seta-banner.png" alt="Seta" class="seta-home">
+            <div class="titulo">
+                <h1>
+                    Invista na certeza.<br>
+                    <strong>
+                        Invista na Racon.
+                    </strong>
+                </h1>
+                <p>
+                    Consórcios para alcançar<br>
+                    <strong>
+                        os seus objetivos com segurança!
+                    </strong>
+                </p>
+
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="form">
+                            <form action="#" method="post">
+                                <p>
+                                    <strong> Informe seus dados</strong> para entrarmos<br> em contato com você:
+                                </p>
+
+                                <input type="text" name="nome" id="nome" placeholder="Nome">
+                                <input type="email" name="email" id="email" placeholder="E-mail">
+                                <input type="tel" name="telefone" id="telefone" placeholder="Telefone">
+                                <select name="estado" id="estado">
+                                    <option value="estado" selected>Estado</option>
+                                </select>
+                                <select name="cidade" id="cidade">
+                                    <option value="cidade" selected>Cidade</option>
+                                </select>
+                                <select name="consorcio" id="consorcio">
+                                    <option value="consorcio" selected>Selecione o Consórcio</option>
+                                </select>
+                                <label for="valor">Valor do Investimento</label>
+                                <div class="wrapper">
+                                    <div class="range-box">
+                                        <div class="track-wrapper">
+                                            <input class="track" type="range" step="0.001" min="35.000,00"
+                                                max="1.000.000,00" value="900.000,00" name="valor">
+                                        </div>
+                                        <ul class="scale">
+                                            <li class="point">R$ 35 mil</li>
+                                            <li class="point">R$ 900 mil</li>
+                                            <li class="point">R$ 1 milhão</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="aceite">
+                                    <div>
+                                        <input type="checkbox" name="aceite" />
+                                        <span class="check-icon"></span>
+                                    </div>
+                                    <div>
+                                        <p>Li e concordo com a <a href="#" target="_blank">Política de
+                                                Privacidade</a><br>
+                                            concedendo o uso dos meus dados*</p>
+                                    </div>
+                                </div>
+
+                                <input type="submit" value="ENVIAR O FORMULÁRIO">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="assets/img/mulher-banner.png" alt="Mulher" class="mulher-banner">
+    </section>
+
+    <section class="sobre">
+        <div class="container">
+            <h2>Perfeito pra quem <strong>investe na vida.</strong></h2>
+            <p>Conquiste seu <strong>carro, casa nova ou invista</strong> com um<br>
+                consórcio seguro e descomplicado. Como funciona o consórcio?
+            </p>
+
+            <div class="passos">
+                <div class="passos-slide">
+                    <div class="col-lg-3">
+                        <div class="info-passo">
+                            <img src="assets/img/n1.png" alt="Número 1">
+                            <p>Escolha uma administradora autorizada a funcionar pelo Banco Central do Brasil, que é a
+                                autoridade que normatiza e fiscaliza o Sistema de Consórcios no país.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="info-passo">
+                            <img src="assets/img/n2.png" alt="Número 2">
+                            <p>Entre em contato com a empresa e verifique os planos disponíveis. Faça a adesão ao grupo
+                                que tiver os melhores prazos e valores para o seu perfil.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="info-passo">
+                            <img src="assets/img/n3.png" alt="Número 3">
+                            <p>Adesão confirmada, é hora de participar das Assembleias, que são as reuniões em que
+                                ocorre a distribuição dos créditos aos participantes. Os contemplados da vez são
+                                escolhidos por sorteio ou lance, que nada mais é do que a antecipação de prestações. Ou
+                                seja, caso queira adiantar a conquista do seu sonho, você pode fazer uma oferta e torcer
+                                para ser o vencedor!</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="info-passo">
+                            <img src="assets/img/n4.png" alt="Número 4">
+                            <p>Após ser contemplado, utilize seu crédito para adquirir o tão sonhado bem ou serviço. E
+                                lembre-se: com o consórcio, após a contemplação, você tem poder de compra à vista,
+                                podendo negociar descontos e muitas outras vantagens.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-block d-lg-none">
+                    <div class="prev-passos">previous</div>
+                    <div class="next-passos">next</div>
+                </div>
+            </div>
+
+            <a href="#" class="btn-default">
+                INVISTA AGORA
+            </a>
+
+            <h2 class="second-title">A Racon tem o consórcio<br>
+                <strong>ideal para você.</strong>
+            </h2>
+        </div>
+
+        <div class="contianer-fluid">
+            <div class="card-info">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <a href="#">
+                            <img src="assets/img/card1.png" alt="Card">
+                        </a>
+                    </div>
+                    <div class="col-lg-4">
+                        <a href="#">
+                            <img src="assets/img/card2.png" alt="Card">
+                        </a>
+                    </div>
+                    <div class="col-lg-4">
+                        <a href="#">
+                            <img src="assets/img/card3.png" alt="Card">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="vetor1">
+            <img src="assets/img/vetor1.png" alt="Vetor">
+        </div>
+
+        <div class="vetor2">
+            <img src="assets/img/vetor2.png" alt="Vetor">
+        </div>
+    </section>
+
+    <section class="depoimentos">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <h2>Clientes que<br>
+                        <strong>confiam na Racon</strong>
+                    </h2>
+                </div>
+                <div class="col-lg-7">
+                    <p>A Racon, com seus mais de 33 anos, faz parte da <a href="https://www.rands.com.br/"
+                            target="_blank">Rands</a>, vertical de soluções financeiras e de
+                        serviços da <a href="https://www.randoncorp.com/pt/" target="_blank">Randoncorp</a>, uma marca
+                        com 75 anos de história e presença global em mais de 120
+                        países.</p>
+                </div>
+            </div>
+
+            <div class="grid">
+                <div class="column">
+                    <a href="https://www.youtube.com/watch?v=_hupblsCnKE" class="glightbox">
+                        <div class="image image-large">
+                            <img src="assets/img/depo1.png" alt="Depoimento">
+                            <div class="texto">
+                                <p>O poder de conquistar
+                                    Consórcio para casa própria</p>
+                                <img src="assets/img/player-depo.png" alt="Player">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=uJi5HI6IY20&list=PLaZ45lIDcATgXuTqpQXd2zt5zOTUHCp6O"
+                        class="glightbox">
+                        <div class="image image-small">
+                            <img src="assets/img/depo2.png" alt="Depoimento">
+                            <div class="texto">
+                                <p>O poder de conquistar
+                                    Consórcio para imóveis</p>
+                                <img src="assets/img/player-depo.png" alt="Player">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="column">
+                    <a href="https://www.youtube.com/watch?v=E7npP56S-2I&list=PLaZ45lIDcATgXuTqpQXd2zt5zOTUHCp6O&index=2"
+                        class="glightbox">
+                        <div class="image image-small">
+                            <img src="assets/img/depo3.png" alt="Depoimento">
+                            <div class="texto">
+                                <p>O poder de conquistar
+                                    Consórcio para construir</p>
+                                <img src="assets/img/player-depo.png" alt="Player">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=H-l1Vij-a9M&list=PLaZ45lIDcATgXuTqpQXd2zt5zOTUHCp6O&index=3"
+                        class="glightbox">
+                        <div class="image image-large">
+                            <img src="assets/img/depo4.png" alt="Depoimento">
+                            <div class="texto">
+                                <p>O poder de conquistar
+                                    Consórcio para casa própria</p>
+                                <img src="assets/img/player-depo.png" alt="Player">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <a href="#" class="btn-default">
+                VER MAIS
+            </a>
+        </div>
+    </section>
+
+    <section class="numeros">
+        <div class="frase">
+            nossos números nossos números nossos números nossos números
+        </div>
+        <img src="assets/img/vetor3.png" alt="Vetor" class="vetor3">
+        <img src="assets/img/homem.png" alt="Vetor" class="homem">
+
+        <div class="informacoes">
+            <div class="container">
+                <div class="row justify-content-end">
+                    <div class="col-lg-5">
+                        <div class="card-numeros">
+                            <div class="infos">
+                                <div class="numero">+200</div>
+                                <p>Pontos de Vendas</p>
+                            </div>
+                            <div class="icone">
+                                <img src="assets/img/icone-pontos.svg" alt="Pontos de Venda">
+                            </div>
+                        </div>
+                        <div class="card-numeros">
+                            <div class="infos">
+                                <div class="numero">11</div>
+                                <p>Estados localizado</p>
+                            </div>
+                            <div class="icone">
+                                <img src="assets/img/icone-estados.svg" alt="Estados localizado">
+                            </div>
+                        </div>
+                        <div class="card-numeros">
+                            <div class="infos">
+                                <div class="numero">R$1.91 Bi</div>
+                                <p>Créditos Comercializados</p>
+                            </div>
+                            <div class="icone">
+                                <img src="assets/img/icone-creditos.svg" alt="Créditos Comercializados">
+                            </div>
+                        </div>
+                        <div class="card-numeros">
+                            <div class="infos">
+                                <div class="numero">+158 mil</div>
+                                <p>Contemplações</p>
+                            </div>
+                            <div class="icone">
+                                <img src="assets/img/icone-contemplacoes.svg" alt="Contemplações">
+                            </div>
+                        </div>
+
+                        <a href="#" class="btn-default">
+                            QUERO INVESTIR
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container-fluid">
+            <div class="parte1">
+                <div>
+                    <a href="#">
+                        <img src="assets/img/logo-footer.png" alt="Logo">
+                    </a>
+                </div>
+                <div>
+                    <h3>Televendas:</h3>
+                    <a href="tel:+5508006454888">0800 645 4888</a>
+                </div>
+                <div>
+                    <h3>Central de relacionamento:</h3>
+                    <a href="tel:+5508006442724">0800 644 2724</a>
+                </div>
+                <div>
+                    <h3>Ouvidoria:</h3>
+                    <a href="tel:+5508007030404">0800 703 0404</a>
+                </div>
+                <div>
+                    <h3>Redes sociais</h3>
+                    <div class="redes">
+                        <a href="#" target="_blank">
+                            <svg width="16" height="18" viewBox="0 0 16 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_72_444)">
+                                    <path
+                                        d="M11.3645 9.94815L11.7928 6.78326H9.11349V4.72944C9.11349 3.86358 9.48776 3.01961 10.6878 3.01961H11.906V0.325186C11.906 0.325186 10.8005 0.111328 9.74353 0.111328C7.53679 0.111328 6.09453 1.62706 6.09453 4.37111V6.78326H3.6416V9.94815H6.09453V17.5991C6.58638 17.6865 7.09049 17.7321 7.60402 17.7321C8.11755 17.7321 8.62164 17.6865 9.11349 17.5991V9.94815H11.3645Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_72_444">
+                                        <rect width="15.5477" height="17.6207" fill="white"
+                                            transform="translate(0 0.111328)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                        <a href="#" target="_blank">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9.242 4.39941C6.78798 4.39941 4.75464 6.39769 4.75464 8.88678C4.75464 11.3759 6.75292 13.3741 9.242 13.3741C11.7311 13.3741 13.7294 11.3408 13.7294 8.88678C13.7294 6.43275 11.696 4.39941 9.242 4.39941ZM9.242 11.7615C7.66442 11.7615 6.36729 10.4644 6.36729 8.88678C6.36729 7.30919 7.66442 6.01206 9.242 6.01206C10.8196 6.01206 12.1167 7.30919 12.1167 8.88678C12.1167 10.4644 10.8196 11.7615 9.242 11.7615Z"
+                                    fill="white" />
+                                <path
+                                    d="M13.9049 5.31117C14.4665 5.31117 14.9218 4.85588 14.9218 4.29426C14.9218 3.73263 14.4665 3.27734 13.9049 3.27734C13.3432 3.27734 12.8879 3.73263 12.8879 4.29426C12.8879 4.85588 13.3432 5.31117 13.9049 5.31117Z"
+                                    fill="white" />
+                                <path
+                                    d="M16.534 1.6649C15.6225 0.718344 14.3253 0.227539 12.8529 0.227539H5.63107C2.58107 0.227539 0.547729 2.26088 0.547729 5.31088V12.4977C0.547729 14.0052 1.03854 15.3023 2.02015 16.2488C2.9667 17.1603 4.22877 17.6161 5.66613 17.6161H12.8179C14.3253 17.6161 15.5874 17.1253 16.4989 16.2488C17.4455 15.3373 17.9363 14.0402 17.9363 12.5327V5.31088C17.9363 3.83847 17.4455 2.57639 16.534 1.6649ZM16.3937 12.5327C16.3937 13.6195 16.0081 14.496 15.3771 15.0919C14.746 15.6879 13.8696 16.0034 12.8179 16.0034H5.66613C4.6144 16.0034 3.73797 15.6879 3.10693 15.0919C2.47589 14.4609 2.16038 13.5845 2.16038 12.4977V5.31088C2.16038 4.25916 2.47589 3.38272 3.10693 2.75168C3.70291 2.1557 4.6144 1.84019 5.66613 1.84019H12.888C13.9397 1.84019 14.8161 2.1557 15.4472 2.78674C16.0432 3.41778 16.3937 4.29421 16.3937 5.31088V12.5327Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                        <a href="#" target="_blank">
+                            <svg width="20" height="18" viewBox="0 0 20 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1.17287 5.84258H5.17134V17.7321H1.17287V5.84258ZM3.19887 0.111328C1.83036 0.111328 0.936279 0.999073 0.936279 2.16427C0.936279 3.3055 1.8042 4.21905 3.14654 4.21905H3.17204C4.56672 4.21905 5.43526 3.30545 5.43526 2.16427C5.40909 0.999073 4.56676 0.111328 3.19887 0.111328ZM14.9887 5.56329C12.8663 5.56329 11.9154 6.7168 11.385 7.52576V5.84258H7.38529C7.43825 6.95796 7.38529 17.7321 7.38529 17.7321H11.385V11.0921C11.385 10.7365 11.4111 10.3822 11.5164 10.1275C11.806 9.41752 12.464 8.68235 13.5679 8.68235C15.0161 8.68235 15.5945 9.77315 15.5945 11.3707V17.732H19.5935V10.9144C19.5935 7.26249 17.6211 5.56329 14.9887 5.56329Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                        <a href="#" target="_blank">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_72_447)">
+                                    <path
+                                        d="M23.2472 6.92994C23.2472 4.83464 21.773 3.14909 19.9514 3.14909C17.484 3.0285 14.9676 2.98193 12.396 2.98193H11.5944C9.02898 2.98193 6.50814 3.0285 4.04075 3.14956C2.22361 3.14956 0.749415 4.84442 0.749415 6.93972C0.63807 8.59687 0.59086 10.2545 0.593533 11.9121C0.589079 13.5697 0.639555 15.2289 0.744961 16.8896C0.744961 18.9849 2.21916 20.6844 4.0363 20.6844C6.6284 20.8101 9.2873 20.866 11.9907 20.8613C14.6986 20.8707 17.3501 20.8117 19.9452 20.6844C21.7668 20.6844 23.241 18.9849 23.241 16.8896C23.3479 15.2273 23.3969 13.5697 23.3924 11.9074C23.4025 10.2498 23.3541 8.59066 23.2472 6.92994ZM9.81284 16.4798V7.33038L16.2708 11.9028L9.81284 16.4798Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_72_447">
+                                        <rect width="22.8033" height="23.8398" fill="white"
+                                            transform="translate(0.593506 0.00195312)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <a href="#" target="_blank" class="logo-footer2">
+                        <img src="assets/img/logo-footer2.png" alt="Logo">
+                    </a>
+                </div>
+            </div>
+
+            <div class="politica">
+                Acesse a nossa <a href="#" target="_blank">Politica de Privacidade</a>.
+            </div>
+        </div>
+
+        <div class="bg-white">
+            <div class="parte2">
+                <a href="#" target="_blank">
+                    <img src="assets/img/logo-footer3.png" alt="Logo">
+                </a>
+                <p>A Racon Consórcios é administrada pela Randon Administradora de Consórcios Ltda., empresa prestadora de
+                    serviços financeiros, autorizada pelo Banco Central do Brasil. Tem sede na Avenida Rubem Bento Alves,
+                    1469, Sala 04, Interlagos, Caxias do Sul/RS, CEP 95052-105 e é inscrita no CNPJ sob o número
+                    91.108.027/0001-58. <a href="#" target="_blank">Visite o site Racon</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
