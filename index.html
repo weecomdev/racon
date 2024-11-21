@@ -4,11 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Racon Consórcios</title>
+    <title>Racon Consórcios - Cuiabá</title>
+
+    <link rel="icon" type="image/x-icon"
+        href="https://homologacao.weedev.com.br/projetos/2024/racon/assets/img/favicon.ico">
 
     <meta name="keywords" content="consórcios, investimentos, segurança">
     <meta name="description" content="Consórcios para alcançar os seus objetivos com segurança!">
-    <meta property="og:image" content="https://webkita.com/gambar.jpg" />
+    <meta property="og:image" content="https://homologacao.weedev.com.br/projetos/2024/racon/assets/img/img-seo.png" />
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
@@ -49,26 +52,26 @@
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Início</a>
+                                <a class="nav-link" href="#invista">Início</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Como Funciona</a>
+                                <a class="nav-link" href="#como-funciona">Como Funciona</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Modalidades</a>
+                                <a class="nav-link" href="#modalidades">Modalidades</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Depoimentos</a>
+                                <a class="nav-link" href="#depoimentos">Depoimentos</a>
                             </li>
                         </ul>
-                        <a class="btn-header" href="#">QUERO INVESTIR</a>
+                        <a class="btn-header" href="#invista">QUERO INVESTIR</a>
                     </div>
                 </div>
             </nav>
         </div>
     </header>
 
-    <section class="section-form">
+    <section class="section-form" id="invista">
         <div class="container position-relative">
             <img src="assets/img/seta-banner.png" alt="Seta" class="seta-home">
             <div class="titulo">
@@ -84,65 +87,125 @@
                         os seus objetivos com segurança!
                     </strong>
                 </p>
+            </div>
+        </div>
 
-                <div class="row">
-                    <div class="col-lg-5">
-                        <div class="form">
-                            <form action="#" method="post">
-                                <p>
-                                    <strong> Informe seus dados</strong> para entrarmos<br> em contato com você:
-                                </p>
+        <div class="row d-flex d-lg-none">
+            <div class="col-lg-5">
+                <div class="form">
+                    <form action="#" method="post">
+                        <p>
+                            <strong> Informe seus dados</strong> para entrarmos<br> em contato com você:
+                        </p>
 
-                                <input type="text" name="nome" id="nome" placeholder="Nome">
-                                <input type="email" name="email" id="email" placeholder="E-mail">
-                                <input type="tel" name="telefone" id="telefone" placeholder="Telefone">
-                                <select name="estado" id="estado">
-                                    <option value="estado" selected>Estado</option>
-                                </select>
-                                <select name="cidade" id="cidade">
-                                    <option value="cidade" selected>Cidade</option>
-                                </select>
-                                <select name="consorcio" id="consorcio">
-                                    <option value="consorcio" selected>Selecione o Consórcio</option>
-                                </select>
-                                <label for="valor">Valor do Investimento</label>
-                                <div class="wrapper">
-                                    <div class="range-box">
-                                        <div class="track-wrapper">
-                                            <input class="track" type="range" step="0.001" min="35.000,00"
-                                                max="1.000.000,00" value="900.000,00" name="valor">
-                                        </div>
-                                        <ul class="scale">
-                                            <li class="point">R$ 35 mil</li>
-                                            <li class="point">R$ 900 mil</li>
-                                            <li class="point">R$ 1 milhão</li>
-                                        </ul>
-                                    </div>
+                        <input type="text" name="nome" id="nome" placeholder="Nome">
+                        <input type="email" name="email" id="email" placeholder="E-mail">
+                        <input type="tel" name="telefone" id="telefone" placeholder="Telefone">
+                        <select name="estado" id="estado">
+                            <option value="estado" selected>Estado</option>
+                        </select>
+                        <select name="cidade" id="cidade">
+                            <option value="cidade" selected>Cidade</option>
+                        </select>
+                        <select name="consorcio" id="consorcio">
+                            <option value="consorcio" selected>Selecione o Consórcio</option>
+                        </select>
+                        <label for="valor">Valor do Investimento</label>
+                        <div class="wrapper">
+                            <div class="range-box">
+                                <div class="track-wrapper">
+                                    <input class="track" type="range" step="0.001" min="35.000,00" max="1.000.000,00"
+                                        value="900.000,00" name="valor">
                                 </div>
-
-                                <div class="aceite">
-                                    <div>
-                                        <input type="checkbox" name="aceite" />
-                                        <span class="check-icon"></span>
-                                    </div>
-                                    <div>
-                                        <p>Li e concordo com a <a href="#" target="_blank">Política de
-                                                Privacidade</a><br>
-                                            concedendo o uso dos meus dados*</p>
-                                    </div>
-                                </div>
-
-                                <input type="submit" value="ENVIAR O FORMULÁRIO">
-                            </form>
+                                <ul class="scale">
+                                    <li class="point">R$ 35 mil</li>
+                                    <li class="point">R$ 900 mil</li>
+                                    <li class="point">R$ 1 milhão</li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
+
+                        <div class="aceite">
+                            <div>
+                                <input type="checkbox" name="aceite" />
+                                <span class="check-icon"></span>
+                            </div>
+                            <div>
+                                <p>Li e concordo com a <a href="#" target="_blank">Política de
+                                        Privacidade</a><br>
+                                    concedendo o uso dos meus dados*</p>
+                            </div>
+                        </div>
+
+                        <input type="submit" value="ENVIAR O FORMULÁRIO">
+                    </form>
                 </div>
             </div>
         </div>
-        <img src="assets/img/mulher-banner.png" alt="Mulher" class="mulher-banner">
+        <div class="mulher">
+            <img src="assets/img/mulher.png" alt="Mulher" class="Mulher">
+        </div>
+        <div class="vetor-mulher">
+            <img src="assets/img/vetor-mulher.png" alt="Mulher" class="Vetor">
+        </div>
     </section>
 
-    <section class="sobre">
+    <div class="container position-relative">
+        <div class="row d-lg-flex d-none">
+            <div class="col-lg-5">
+                <div class="form">
+                    <form action="#" method="post">
+                        <p>
+                            <strong> Informe seus dados</strong> para entrarmos<br> em contato com você:
+                        </p>
+
+                        <input type="text" name="nome" id="nome" placeholder="Nome">
+                        <input type="email" name="email" id="email" placeholder="E-mail">
+                        <input type="tel" name="telefone" id="telefone" placeholder="Telefone">
+                        <select name="estado" id="estado">
+                            <option value="estado" selected>Estado</option>
+                        </select>
+                        <select name="cidade" id="cidade">
+                            <option value="cidade" selected>Cidade</option>
+                        </select>
+                        <select name="consorcio" id="consorcio">
+                            <option value="consorcio" selected>Selecione o Consórcio</option>
+                        </select>
+                        <label for="valor">Valor do Investimento</label>
+                        <div class="wrapper">
+                            <div class="range-box">
+                                <div class="track-wrapper">
+                                    <input class="track" type="range" step="0.001" min="35.000,00" max="1.000.000,00"
+                                        value="900.000,00" name="valor">
+                                </div>
+                                <ul class="scale">
+                                    <li class="point">R$ 35 mil</li>
+                                    <li class="point">R$ 900 mil</li>
+                                    <li class="point">R$ 1 milhão</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="aceite">
+                            <div>
+                                <input type="checkbox" name="aceite" />
+                                <span class="check-icon"></span>
+                            </div>
+                            <div>
+                                <p>Li e concordo com a <a href="#" target="_blank">Política de
+                                        Privacidade</a><br>
+                                    concedendo o uso dos meus dados*</p>
+                            </div>
+                        </div>
+
+                        <input type="submit" value="ENVIAR O FORMULÁRIO">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="sobre" id="como-funciona">
         <div class="container">
             <h2>Perfeito pra quem <strong>investe na vida.</strong></h2>
             <p>Conquiste seu <strong>carro, casa nova ou invista</strong> com um<br>
@@ -184,17 +247,34 @@
                         </div>
                     </div>
                 </div>
-                <div class="d-block d-lg-none">
-                    <div class="prev-passos">previous</div>
-                    <div class="next-passos">next</div>
+                <div class="d-flex d-lg-none justify-content-between">
+                    <div>
+                        <a href="#invista" class="btn-default">
+                            INVISTA AGORA
+                        </a>
+                    </div>
+                    <div class="btns-slide">
+                        <div class="prev-passos">
+                            <img src="assets/img/slide-left.png" alt="Seta">
+                        </div>
+                        <div class="next-passos">
+                            <img src="assets/img/slide-right.png" alt="Seta">
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <a href="#" class="btn-default">
-                INVISTA AGORA
-            </a>
+            <div class="d-block d-lg-none vetor1-mobile">
+                <img src="assets/img/vetor1.png" alt="Vetor">
+            </div>
 
-            <h2 class="second-title">A Racon tem o consórcio<br>
+            <div class="d-none d-lg-block">
+                <a href="#invista" class="btn-default">
+                    INVISTA AGORA
+                </a>
+            </div>
+
+            <h2 class="second-title" id="modalidades">A Racon tem o consórcio<br>
                 <strong>ideal para você.</strong>
             </h2>
         </div>
@@ -203,17 +283,17 @@
             <div class="card-info">
                 <div class="row">
                     <div class="col-lg-4">
-                        <a href="#">
+                        <a href="#invista">
                             <img src="assets/img/card1.png" alt="Card">
                         </a>
                     </div>
                     <div class="col-lg-4">
-                        <a href="#">
+                        <a href="#invista">
                             <img src="assets/img/card2.png" alt="Card">
                         </a>
                     </div>
                     <div class="col-lg-4">
-                        <a href="#">
+                        <a href="#invista">
                             <img src="assets/img/card3.png" alt="Card">
                         </a>
                     </div>
@@ -230,7 +310,7 @@
         </div>
     </section>
 
-    <section class="depoimentos">
+    <section class="depoimentos" id="depoimentos">
         <div class="container">
             <div class="row">
                 <div class="col-lg-5">
@@ -298,18 +378,16 @@
                 </div>
             </div>
 
-            <a href="#" class="btn-default">
+            <!-- <a href="#" class="btn-default">
                 VER MAIS
-            </a>
+            </a> -->
         </div>
     </section>
 
     <section class="numeros">
         <div class="frase">
             nossos números nossos números nossos números nossos números
-        </div>
-        <img src="assets/img/vetor3.png" alt="Vetor" class="vetor3">
-        <img src="assets/img/homem.png" alt="Vetor" class="homem">
+        </div>      
 
         <div class="informacoes">
             <div class="container">
@@ -352,13 +430,16 @@
                             </div>
                         </div>
 
-                        <a href="#" class="btn-default">
+                        <a href="#invista" class="btn-default">
                             QUERO INVESTIR
                         </a>
                     </div>
                 </div>
             </div>
         </div>
+
+        <img src="assets/img/vetor3.png" alt="Vetor" class="vetor3">
+        <img src="assets/img/homem.png" alt="Vetor" class="homem">
     </section>
     <footer>
         <div class="container-fluid">
@@ -453,11 +534,13 @@
 
         <div class="bg-white">
             <div class="parte2">
-                <a href="#" target="_blank">
+                <a href="#" target="_blank" class="logo-abac">
                     <img src="assets/img/logo-footer3.png" alt="Logo">
                 </a>
-                <p>A Racon Consórcios é administrada pela Randon Administradora de Consórcios Ltda., empresa prestadora de
-                    serviços financeiros, autorizada pelo Banco Central do Brasil. Tem sede na Avenida Rubem Bento Alves,
+                <p>A Racon Consórcios é administrada pela Randon Administradora de Consórcios Ltda., empresa prestadora
+                    de
+                    serviços financeiros, autorizada pelo Banco Central do Brasil. Tem sede na Avenida Rubem Bento
+                    Alves,
                     1469, Sala 04, Interlagos, Caxias do Sul/RS, CEP 95052-105 e é inscrita no CNPJ sob o número
                     91.108.027/0001-58. <a href="#" target="_blank">Visite o site Racon</a></p>
             </div>
