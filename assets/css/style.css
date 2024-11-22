@@ -586,6 +586,10 @@ header .navbar .btn-header:hover {
     color: #283561;
 }
 
+.form input[type=range] {
+    padding: 0;
+}
+
 .form input[type=submit] {
     font-family: Panton;
     font-size: 18px;
@@ -1484,4 +1488,32 @@ form .error-message {
 form .aceite .error-message {
     position: absolute;
     bottom: -27px;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.track-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.tooltip-range {
+    position: absolute;
+    top: -30px;
+    /* Ajusta a posição acima do range */
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 14px;
+    white-space: nowrap;
+    pointer-events: none;
+    transition: left 0.1s ease-in-out;
+}
+
+input[type="range"] {
+    width: 100%;
 }
