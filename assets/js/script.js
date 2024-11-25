@@ -1,5 +1,7 @@
 // Inicialização do Slick Slider
 $(document).ready(function () {
+    new WOW().init();
+    
     $('.passos-slide').slick({
         dots: false,
         infinite: false,
@@ -39,24 +41,6 @@ $(document).ready(function () {
 
     // Inicialização do GLightbox
     const glightbox = GLightbox();
-});
-
-// Animação de texto rolando
-document.addEventListener("DOMContentLoaded", function () {
-    const fraseDiv = document.querySelector(".frase");
-    const text = fraseDiv.textContent.trim();
-
-    // Criação do texto rolando
-    const rollingText = document.createElement("div");
-    rollingText.classList.add("rolling-text");
-    rollingText.textContent = text;
-
-    // Configurações de transição contínua
-    fraseDiv.innerHTML = ""; // Limpa o conteúdo original
-    fraseDiv.appendChild(rollingText);
-
-    const duplicateText = rollingText.cloneNode(true);
-    fraseDiv.appendChild(duplicateText);
 });
 
 // Validação dos formulários
@@ -119,4 +103,153 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         });
     });
+
+    // Seleciona os elementos para os dois contextos (desktop e mobile)
+    const tracks = document.querySelectorAll('.track');
+    const outputs = document.querySelectorAll('.value');
+
+    // Função para atualizar os valores
+    function updateValues(track, value) {
+        const valueText = (+track.value).toFixed(3);
+        value.textContent = valueText;
+
+        // Sincroniza os outros sliders e outputs
+        tracks.forEach((otherTrack) => {
+            if (otherTrack !== track) {
+                otherTrack.value = track.value;
+            }
+        });
+        outputs.forEach((otherOutput) => {
+            if (otherOutput !== value) {
+                otherOutput.textContent = valueText;
+            }
+        });
+    }
+
+    // Adiciona os listeners de evento para todos os sliders
+    tracks.forEach((track, index) => {
+        const output = outputs[index];
+        output.textContent = (+track.value).toFixed(3);
+
+        track.addEventListener('input', () => updateValues(track, output));
+    });
 });
+
+// Seleciona todos os sliders (tracks) e suas tooltips correspondentes
+document.addEventListener('DOMContentLoaded', function () {
+    const trackWrappers = document.querySelectorAll('.track-wrapper');
+
+    // Função para atualizar o valor e a posição da tooltip
+    function updateTooltip(track, tooltip, outputValue) {
+        // Formata o valor como moeda em Real (R$)
+        const value = (+track.value).toLocaleString('pt-BR', {
+            style: 'currency',
+            currency: 'BRL'
+        });
+        outputValue.textContent = value;
+
+        // Calcula a posição da tooltip com base no valor do slider
+        const trackWidth = track.offsetWidth;
+        const thumbWidth = 20; // Largura aproximada do "polegar"
+        const min = track.min;
+        const max = track.max;
+        const range = max - min;
+        const percentage = (track.value - min) / range;
+        const offset = percentage * (trackWidth - thumbWidth) + thumbWidth / 2;
+
+        tooltip.style.left = `${offset}px`;
+    }
+
+    // Inicializa os sliders e tooltips
+    trackWrappers.forEach(wrapper => {
+        const track = wrapper.querySelector('.track');
+        const tooltip = wrapper.querySelector('.value-wrapper');
+        const outputValue = tooltip.querySelector('.value');
+
+        // Atualiza a tooltip na inicialização
+        updateTooltip(track, tooltip, outputValue);
+
+        // Atualiza a tooltip durante o input
+        track.addEventListener('input', () => updateTooltip(track, tooltip, outputValue));
+    });
+});
+
+
+//Adiciona class no header ao dar scroll
+document.addEventListener("DOMContentLoaded", function () {
+    const header = document.getElementById("header");
+
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 50) { // Verifica se a página foi rolada mais de 50px
+            header.classList.add("scrolled");
+        } else {
+            header.classList.remove("scrolled");
+        }
+    });
+});
+
+//animação dos números
+document.addEventListener("DOMContentLoaded", function () {
+    const counters = document.querySelectorAll(".numero");
+
+    // Função para animar os números
+    function animateNumber(counter) {
+        let targetValue = counter.textContent.trim().replace(/[^\d,\.]+/g, ''); // Remove caracteres não numéricos e converte para número
+        let isCurrency = counter.textContent.includes("R$"); // Verifica se é valor monetário
+        let isLargeNumber = targetValue.includes("mil") || targetValue.includes("Bi");
+
+        // Converte o texto para número (tratando números com ponto ou vírgula)
+        targetValue = parseFloat(targetValue.replace(',', '.'));
+
+        let currentValue = 0;
+        const increment = targetValue / 100; // A quantidade de incremento por iteração
+
+        const interval = setInterval(() => {
+            currentValue += increment;
+            if (currentValue >= targetValue) {
+                clearInterval(interval);
+                currentValue = targetValue;
+            }
+
+            // Formata o número corretamente
+            if (isCurrency) {
+                if (isLargeNumber) {
+                    let formattedValue = `R$${(currentValue / 1000000000).toFixed(2)} Bi`;
+                    counter.textContent = formattedValue;
+                } else {
+                    counter.textContent = `R$${currentValue.toFixed(2).replace('.', ',')}`;
+                }
+            } else if (isLargeNumber) {
+                if (targetValue >= 1000000000) {
+                    counter.textContent = `R$${(currentValue / 1000000000).toFixed(2)} Bi`;
+                } else if (targetValue >= 1000000) {
+                    counter.textContent = `${Math.floor(currentValue / 1000000)} mil`;
+                }
+            } else {
+                counter.textContent = Math.floor(currentValue).toLocaleString();
+            }
+        }, 10); // A cada 10ms o valor é atualizado
+    }
+
+    // Função que cria o observer
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Se o elemento estiver visível, executa a animação
+                animateNumber(entry.target);
+                observer.unobserve(entry.target); // Para de observar após a animação
+            }
+        });
+    }, {
+        threshold: 0.5 // O código será executado quando 50% do elemento estiver visível na tela
+    });
+
+    // Inicia a observação dos elementos .numero
+    counters.forEach(counter => {
+        observer.observe(counter);
+    });
+});
+
+
+
+

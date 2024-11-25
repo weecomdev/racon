@@ -31,18 +31,95 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
     <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
 
+    <!-- wow -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/fonts.css">
     <script src="assets/js/script.js"></script>
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
-                        <img src="assets/img/logo.png" alt="Logo Racon">
+                    <a class="navbar-brand wow fadeIn" href="#">
+                        <svg width="414" height="33" viewBox="0 0 414 33" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M11.6993 25.1911L7.39345 16.0426H4.55624V25.1911H0V2.33614H8.14448C12.8009 2.33614 15.4879 4.7703 15.4879 9.03416C15.4879 11.697 14.4197 13.4287 11.8829 14.85L11.6159 14.997L16.5727 25.2074H11.6993V25.1911ZM4.55624 12.3995H6.12505C9.01233 12.3995 10.9483 11.8604 10.9483 9.18119C10.9483 6.35495 8.62848 5.96287 6.12505 5.96287H4.55624V12.3995Z"
+                                fill="white" />
+                            <path
+                                d="M25.7352 25.5832C21.0121 25.5832 17.1735 21.6787 17.1735 16.8757C17.1735 12.0728 21.0121 8.16832 25.7352 8.16832C27.5043 8.16832 29.0064 8.70742 30.3415 9.81832L30.8923 10.2921V8.5604H35.2482V25.1911H30.8923V23.1L30.3081 23.7371C29.8909 24.1946 28.6058 25.5832 25.7352 25.5832ZM25.9522 12.2198C23.3653 12.2198 21.2624 14.3109 21.2624 16.8757C21.2624 19.4406 23.3653 21.5317 25.9522 21.5317C28.539 21.5317 30.6419 19.4406 30.6419 16.8757C30.6419 14.3109 28.539 12.2198 25.9522 12.2198Z"
+                                fill="white" />
+                            <path
+                                d="M46.9977 25.5832C41.924 25.5832 37.9686 21.7604 37.9686 16.8757C37.9686 11.9911 41.9407 8.16832 46.9977 8.16832C51.0198 8.16832 54.2409 10.6025 54.9585 14.1475H50.5692C49.9016 12.5955 48.6833 11.8277 46.9476 11.8277C44.2272 11.8277 42.3246 13.9025 42.3246 16.8757C42.3246 19.3099 43.7766 21.9238 46.9476 21.9238C48.7 21.9238 49.9183 21.1396 50.5692 19.604H54.9585C54.1074 23.3124 51.1033 25.5832 46.9977 25.5832Z"
+                                fill="white" />
+                            <path
+                                d="M65.8067 25.5832C60.9 25.5832 56.9112 21.6787 56.9112 16.8757C56.9112 12.0728 60.9 8.16832 65.8067 8.16832C70.7134 8.16832 74.7022 12.0728 74.7022 16.8757C74.7022 21.6787 70.7134 25.5832 65.8067 25.5832ZM65.8067 12.4322C63.3033 12.4322 61.2505 14.4252 61.2505 16.8921C61.2505 19.3589 63.2866 21.352 65.8067 21.352C68.3102 21.352 70.363 19.3589 70.363 16.8921C70.363 14.4252 68.3102 12.4322 65.8067 12.4322Z"
+                                fill="white" />
+                            <path
+                                d="M89.0552 25.1911V14.948C89.0552 13.1347 87.9871 12.2198 85.9009 12.2198C83.9482 12.2198 81.862 13.102 81.862 15.5688V25.1748H77.5061V8.5604H81.862V11.0926C81.862 11.0926 82.079 10.6842 82.2459 10.4554C82.5463 10.047 82.6798 9.91634 82.8133 9.78564C84.2319 8.52772 85.467 8.15198 87.6032 8.15198C91.1247 8.15198 93.4112 10.4228 93.4112 13.9351V25.1748H89.0552V25.1911Z"
+                                fill="white" />
+                            <path
+                                d="M113.122 25.5832C106.646 25.5832 101.572 20.3718 101.572 13.7228C101.572 7.07376 106.646 1.84604 113.122 1.84604C118.312 1.84604 122.234 4.83564 123.436 9.68762H118.579C117.444 7.36782 115.708 6.2896 113.138 6.2896C109.016 6.2896 106.145 9.34455 106.145 13.7064C106.145 18.0683 109.016 21.1233 113.138 21.1233C115.708 21.1233 117.444 20.045 118.579 17.7252H123.436C122.234 22.5936 118.312 25.5832 113.122 25.5832Z"
+                                fill="white" />
+                            <path
+                                d="M134.501 25.5832C129.594 25.5832 125.605 21.6787 125.605 16.8757C125.605 12.0728 129.594 8.16832 134.501 8.16832C139.407 8.16832 143.396 12.0728 143.396 16.8757C143.396 21.6787 139.407 25.5832 134.501 25.5832ZM134.501 12.4322C131.997 12.4322 129.944 14.4252 129.944 16.8921C129.944 19.3589 131.981 21.352 134.501 21.352C137.004 21.352 139.057 19.3589 139.057 16.8921C139.057 14.4252 137.004 12.4322 134.501 12.4322Z"
+                                fill="white" />
+                            <path
+                                d="M171.268 25.5832C167.212 25.5832 164.892 23.7861 164.375 20.2574H168.497C168.681 21.695 169.933 22.4465 171.385 22.4465C172.603 22.4465 173.621 21.7277 173.621 20.4535C173.621 19.1465 172.102 18.6728 170.333 18.1173C167.83 17.3332 164.993 16.451 164.993 13.151C164.993 8.52772 169.832 8.16832 171.318 8.16832C175.023 8.16832 176.875 9.44257 177.476 12.4322H173.538C173.337 11.5663 172.636 10.9619 171.468 10.9619C170.45 10.9619 169.365 11.501 169.365 12.6936C169.365 14.1149 170.984 14.4252 172.686 14.9644C175.173 15.7485 177.994 16.6307 177.994 20.1757C177.994 23.9168 174.622 25.5832 171.268 25.5832Z"
+                                fill="white" />
+                            <path
+                                d="M188.525 8.16832C183.618 8.16832 179.629 12.0728 179.629 16.8757C179.629 21.6787 183.618 25.5832 188.525 25.5832C193.431 25.5832 197.42 21.6787 197.42 16.8757C197.42 12.0728 193.431 8.16832 188.525 8.16832ZM188.525 21.3356C186.021 21.3356 183.968 19.3426 183.968 16.8757C183.968 14.4089 186.005 12.4158 188.525 12.4158C191.028 12.4158 193.081 14.4089 193.081 16.8757C193.081 19.3426 191.028 21.3356 188.525 21.3356Z"
+                                fill="white" />
+                            <path d="M186.272 6.48565L188.925 2.33614H193.565L189.543 6.48565H186.272Z" fill="white" />
+                            <path
+                                d="M199.857 25.1911V8.5604H204.213V10.9946V10.8149C205.198 8.88713 207.167 8.16832 209.57 8.16832H209.837V12.2198C205.047 12.2198 204.196 13.8208 204.196 17.2025V25.1748H199.857V25.1911Z"
+                                fill="white" />
+                            <path
+                                d="M219.617 25.5832C214.544 25.5832 210.588 21.7604 210.588 16.8757C210.588 11.9911 214.56 8.16832 219.617 8.16832C223.639 8.16832 226.861 10.6025 227.578 14.1475H223.189C222.521 12.5955 221.303 11.8277 219.567 11.8277C216.847 11.8277 214.944 13.9025 214.944 16.8757C214.944 19.3099 216.396 21.9238 219.567 21.9238C221.32 21.9238 222.538 21.1396 223.189 19.604H227.578C226.727 23.3124 223.723 25.5832 219.617 25.5832Z"
+                                fill="white" />
+                            <path
+                                d="M230.315 8.5604H234.671V25.1911H230.315V8.5604ZM230.315 2.33614H234.671V6.48564H230.315V2.33614Z"
+                                fill="white" />
+                            <path
+                                d="M245.836 25.5832C240.93 25.5832 236.941 21.6787 236.941 16.8757C236.941 12.0728 240.93 8.16832 245.836 8.16832C250.743 8.16832 254.732 12.0728 254.732 16.8757C254.732 21.6787 250.743 25.5832 245.836 25.5832ZM245.836 12.4322C243.333 12.4322 241.28 14.4252 241.28 16.8921C241.28 19.3589 243.316 21.352 245.836 21.352C248.34 21.352 250.393 19.3589 250.393 16.8921C250.393 14.4252 248.357 12.4322 245.836 12.4322Z"
+                                fill="white" />
+                            <path
+                                d="M157.749 25.1911V14.948C157.749 13.1347 156.681 12.2198 154.595 12.2198C152.642 12.2198 150.556 13.102 150.556 15.5688V25.1748H146.2V8.5604H150.539V11.0926C150.539 11.0926 150.756 10.6842 150.923 10.4554C151.224 10.047 151.357 9.91634 151.491 9.78564C152.909 8.52772 154.144 8.15198 156.281 8.15198C159.802 8.15198 162.088 10.4228 162.088 13.9351V25.1748H157.749V25.1911Z"
+                                fill="white" />
+                            <path
+                                d="M262.876 25.5832C258.821 25.5832 256.501 23.7861 255.984 20.2574H260.106C260.29 21.695 261.541 22.4465 262.993 22.4465C264.212 22.4465 265.23 21.7277 265.23 20.4535C265.23 19.1465 263.711 18.6728 261.942 18.1173C259.438 17.3332 256.601 16.451 256.601 13.151C256.601 8.52772 261.441 8.16832 262.927 8.16832C266.632 8.16832 268.484 9.44257 269.085 12.4322H265.146C264.946 11.5663 264.245 10.9619 263.077 10.9619C262.059 10.9619 260.974 11.501 260.974 12.6936C260.974 14.1149 262.593 14.4252 264.295 14.9644C266.782 15.7485 269.602 16.6307 269.602 20.1757C269.602 23.9168 266.214 25.5832 262.876 25.5832Z"
+                                fill="white" />
+                            <path
+                                d="M57.2784 6.81237L56.5441 3.23465C62.619 2.02574 69.0111 2.02574 75.0861 3.23465L74.3518 6.81237C68.7608 5.70148 62.8694 5.70148 57.2784 6.81237Z"
+                                fill="white" />
+                            <path
+                                d="M57.2784 26.9391L56.5441 30.5168C62.619 31.7257 69.0111 31.7257 75.0861 30.5168L74.3518 26.9391C68.7608 28.05 62.8694 28.05 57.2784 26.9391Z"
+                                fill="white" />
+                            <path d="M287.944 0.277721H291.699V33H287.944V0.277721Z" fill="white" />
+                            <path
+                                d="M315.732 1.69901C318.553 1.69901 321.473 2.58119 324.127 4.29653L322.241 7.33515C320.322 6.04455 318.336 5.32574 316.316 5.32574C311.643 5.32574 308.405 8.70742 308.405 13.5757C308.405 18.4441 311.643 21.8257 316.316 21.8257C318.336 21.8257 320.322 21.1069 322.241 19.8163L324.127 22.855C321.473 24.554 318.553 25.4525 315.732 25.4525C308.622 25.4525 303.716 20.5515 303.716 13.5921C303.716 6.58366 308.622 1.69901 315.732 1.69901Z"
+                                fill="white" />
+                            <path
+                                d="M343.62 25.0114H340.065L339.515 22.5936C338.263 24.4069 336.143 25.4198 333.673 25.4198C329.768 25.4198 326.981 22.7896 326.981 19.0485V8.31535H331.437V18.3297C331.437 20.4045 332.939 21.8421 335.025 21.8421C337.429 21.8421 339.164 20.0777 339.164 17.5129V8.31535H343.62V25.0114Z"
+                                fill="white" />
+                            <path
+                                d="M350.396 0.914852C351.965 0.914852 353.083 2.00941 353.083 3.54505C353.083 5.08069 351.965 6.17525 350.396 6.17525C348.861 6.17525 347.743 5.08069 347.743 3.54505C347.743 2.00941 348.877 0.914852 350.396 0.914852ZM348.177 8.31535H352.633V25.0114H348.177V8.31535Z"
+                                fill="white" />
+                            <path
+                                d="M364.048 14.6213C365.1 14.6213 366.235 14.7193 367.353 14.9644V14.0822C367.353 12.3832 365.968 11.1579 363.831 11.1579C362.096 11.1579 360.21 11.5663 358.224 12.3505L357.105 9.31188C359.642 8.36435 362.046 7.90693 364.349 7.90693C368.671 7.90693 371.525 10.4228 371.525 14.1475V20.9272C371.525 21.646 371.976 22.1198 372.71 22.1198C373.061 22.1198 373.445 22.0545 373.578 22.0218L373.895 25.1911C373.161 25.3218 372.36 25.4361 371.525 25.4361C369.79 25.4361 368.454 24.5866 367.87 23.1817C366.402 24.6193 364.349 25.4361 362.263 25.4361C358.708 25.4361 356.171 23.247 356.171 20.1921C356.188 16.6634 359.108 14.6213 364.048 14.6213ZM363.414 22.3485C365.784 22.3485 367.353 20.7475 367.353 18.4604V17.4802C366.452 17.2351 365.5 17.1371 364.566 17.1371C362.029 17.1371 360.46 18.199 360.46 19.9307C360.46 21.303 361.745 22.3485 363.414 22.3485Z"
+                                fill="white" />
+                            <path
+                                d="M376.365 1.02921H380.821V10.1941C382.04 8.72376 383.842 7.90693 385.945 7.90693C390.534 7.90693 393.772 11.5173 393.772 16.6634C393.772 21.8094 390.534 25.4198 385.945 25.4198C383.675 25.4198 381.739 24.505 380.471 22.8713L379.92 25.0114H376.365V1.02921ZM384.793 11.354C382.423 11.354 380.754 13.0856 380.754 15.5525V17.8069C380.754 20.2248 382.423 22.0054 384.793 22.0054C387.397 22.0054 389.249 19.7837 389.249 16.696C389.249 13.5267 387.414 11.354 384.793 11.354Z"
+                                fill="white" />
+                            <path
+                                d="M404.153 14.6213C405.205 14.6213 406.34 14.7193 407.458 14.9644V14.0822C407.458 12.3832 406.073 11.1579 403.936 11.1579C402.201 11.1579 400.315 11.5663 398.329 12.3505L397.21 9.31188C399.747 8.36436 402.15 7.90693 404.454 7.90693C408.776 7.90693 411.63 10.4228 411.63 14.1475V20.9272C411.63 21.646 412.081 22.1198 412.815 22.1198C413.166 22.1198 413.549 22.0545 413.683 22.0218L414 25.1911C413.266 25.3218 412.465 25.4361 411.63 25.4361C409.894 25.4361 408.559 24.5866 407.975 23.1817C406.506 24.6193 404.454 25.4361 402.367 25.4361C398.813 25.4361 396.276 23.247 396.276 20.1921C396.292 16.6634 399.213 14.6213 404.153 14.6213ZM403.519 22.3485C405.889 22.3485 407.458 20.7475 407.458 18.4604V17.4802C406.556 17.2351 405.605 17.1371 404.671 17.1371C402.134 17.1371 400.565 18.199 400.565 19.9307C400.565 21.303 401.85 22.3485 403.519 22.3485ZM403.352 6.7797L401.65 4.39455L408.092 0L410.078 2.79356L403.352 6.7797Z"
+                                fill="white" />
+                        </svg>
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
@@ -73,8 +150,8 @@
 
     <section class="section-form" id="invista">
         <div class="container position-relative">
-            <img src="assets/img/seta-banner.png" alt="Seta" class="seta-home">
-            <div class="titulo">
+            <img src="assets/img/seta-banner.png" alt="Seta" class="seta-home wow fadeInLeft" data-wow-delay="0.8s">
+            <div class="titulo wow fadeInLeft">
                 <h1>
                     Invista na certeza.<br>
                     <strong>
@@ -92,7 +169,7 @@
 
         <div class="row d-flex d-lg-none">
             <div class="col-lg-5">
-                <div class="form">
+                <div class="form wow fadeIn">
                     <form action="#" method="post">
                         <p>
                             <strong> Informe seus dados</strong> para entrarmos<br> em contato com você:
@@ -114,12 +191,15 @@
                         <div class="wrapper">
                             <div class="range-box">
                                 <div class="track-wrapper">
-                                    <input class="track" type="range" step="1" min="35000" max="1000000" value="482000"
+                                    <div class="value-wrapper tooltip-range">
+                                        <p class="value">500000</p>
+                                    </div>
+                                    <input class="track" type="range" step="1" min="35000" max="1000000" value="500000"
                                         name="valor" />
                                 </div>
                                 <ul class="scale">
                                     <li class="point">R$ 35 mil</li>
-                                    <li class="point">R$ 482 mil</li>
+                                    <li class="point">R$ 500 mil</li>
                                     <li class="point">R$ 1 milhão</li>
                                 </ul>
                             </div>
@@ -144,7 +224,7 @@
             </div>
         </div>
         <div class="mulher">
-            <img src="assets/img/mulher.png" alt="Mulher" class="Mulher">
+            <img src="assets/img/mulher.png" alt="Mulher" class="Mulher wow fadeInUp">
         </div>
         <div class="vetor-mulher">
             <img src="assets/img/vetor-mulher.png" alt="Mulher" class="Vetor">
@@ -154,7 +234,8 @@
     <div class="container position-relative">
         <div class="row d-lg-flex d-none">
             <div class="col-lg-5">
-                <div class="form">
+
+                <div class="form wow fadeInLeft">
                     <form action="#" method="post">
                         <p>
                             <strong> Informe seus dados</strong> para entrarmos<br> em contato com você:
@@ -176,12 +257,15 @@
                         <div class="wrapper">
                             <div class="range-box">
                                 <div class="track-wrapper">
-                                    <input class="track" type="range" step="1" min="35000" max="1000000" value="482000"
+                                    <div class="value-wrapper tooltip-range">
+                                        <p class="value">500000</p>
+                                    </div>
+                                    <input class="track" type="range" step="1" min="35000" max="1000000" value="500000"
                                         name="valor" />
                                 </div>
                                 <ul class="scale">
                                     <li class="point">R$ 35 mil</li>
-                                    <li class="point">R$ 482 mil</li>
+                                    <li class="point">R$ 500 mil</li>
                                     <li class="point">R$ 1 milhão</li>
                                 </ul>
                             </div>
@@ -209,28 +293,29 @@
 
     <section class="sobre" id="como-funciona">
         <div class="container">
-            <h2>Perfeito pra quem <strong>investe na vida.</strong></h2>
-            <p>Conquiste seu <strong>carro, casa nova ou invista</strong> com um<br>
+            <h2 class="wow fadeInUp" data-wow-delay="0.5s">Perfeito pra quem <strong>investe na vida.</strong></h2>
+            <p class="wow fadeInUp" data-wow-delay="0.6s">Conquiste seu <strong>carro, casa nova ou invista</strong> com
+                um<br>
                 consórcio seguro e descomplicado. Como funciona o consórcio?
             </p>
 
             <div class="passos">
                 <div class="passos-slide">
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="info-passo">
                             <img src="assets/img/n1.png" alt="Número 1">
                             <p>Escolha uma administradora autorizada a funcionar pelo Banco Central do Brasil, que é a
                                 autoridade que normatiza e fiscaliza o Sistema de Consórcios no país.</p>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 wow fadeInUp" data-wow-delay="0.6s">
                         <div class="info-passo">
                             <img src="assets/img/n2.png" alt="Número 2">
                             <p>Entre em contato com a empresa e verifique os planos disponíveis. Faça a adesão ao grupo
                                 que tiver os melhores prazos e valores para o seu perfil.</p>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 wow fadeInUp" data-wow-delay="0.7s">
                         <div class="info-passo">
                             <img src="assets/img/n3.png" alt="Número 3">
                             <p>Adesão confirmada, é hora de participar das Assembleias, que são as reuniões em que
@@ -240,7 +325,7 @@
                                 para ser o vencedor!</p>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 wow fadeInUp" data-wow-delay="0.8s">
                         <div class="info-passo">
                             <img src="assets/img/n4.png" alt="Número 4">
                             <p>Após ser contemplado, utilize seu crédito para adquirir o tão sonhado bem ou serviço. E
@@ -251,7 +336,7 @@
                 </div>
                 <div class="d-flex d-lg-none justify-content-between">
                     <div>
-                        <a href="#invista" class="btn-default">
+                        <a href="#invista" class="btn-default wow fadeInUp">
                             INVISTA AGORA
                         </a>
                     </div>
@@ -286,17 +371,32 @@
                 <div class="row">
                     <div class="col-lg-4">
                         <a href="#invista">
-                            <img src="assets/img/card1.png" alt="Card">
+                            <div class="card-invista wow fadeInUp" data-wow-delay="0.5s">
+                                <img src="assets/img/card1.png" alt="Card">
+                                <a href="#invista" class="btn-default">
+                                    INVISTA AGORA
+                                </a>
+                            </div>
                         </a>
                     </div>
                     <div class="col-lg-4">
                         <a href="#invista">
-                            <img src="assets/img/card2.png" alt="Card">
+                            <div class="card-invista wow fadeInUp" data-wow-delay="0.6s">
+                                <img src="assets/img/card2.png" alt="Card">
+                                <a href="#invista" class="btn-default">
+                                    INVISTA AGORA
+                                </a>
+                            </div>
                         </a>
                     </div>
                     <div class="col-lg-4">
                         <a href="#invista">
-                            <img src="assets/img/card3.png" alt="Card">
+                            <div class="card-invista wow fadeInUp" data-wow-delay="0.7s">
+                                <img src="assets/img/card3.png" alt="Card">
+                                <a href="#invista" class="btn-default">
+                                    INVISTA AGORA
+                                </a>
+                            </div>
                         </a>
                     </div>
                 </div>
@@ -316,39 +416,54 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-5">
-                    <h2>Clientes que<br>
+                    <h2 class="wow fadeInLeft">Clientes que<br>
                         <strong>confiam na Racon</strong>
                     </h2>
                 </div>
                 <div class="col-lg-7">
-                    <p>A Racon, com seus mais de 33 anos, faz parte da <a href="https://www.rands.com.br/"
-                            target="_blank">Rands</a>, vertical de soluções financeiras e de
+                    <p class="wow fadeInRight">A Racon, com seus mais de 33 anos, faz parte da <a
+                            href="https://www.rands.com.br/" target="_blank">Rands</a>, vertical de soluções financeiras
+                        e de
                         serviços da <a href="https://www.randoncorp.com/pt/" target="_blank">Randoncorp</a>, uma marca
                         com 75 anos de história e presença global em mais de 120
                         países.</p>
                 </div>
             </div>
 
-            <div class="grid">
+            <div class="grid wow fadeIn">
                 <div class="column">
                     <a href="https://www.youtube.com/watch?v=_hupblsCnKE" class="glightbox">
                         <div class="image image-large">
-                            <img src="assets/img/depo1.png" alt="Depoimento">
+                            <img src="assets/img/depo1.png" alt="Depoimento" class="img-depoimento">
                             <div class="texto">
                                 <p>O poder de conquistar
                                     Consórcio para casa própria</p>
-                                <img src="assets/img/player-depo.png" alt="Player">
+
+                                <div class="player">
+                                    <svg width="23" height="26" viewBox="0 0 23 26" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M23 13L0.500001 25.9904L0.500002 0.00961778L23 13Z" fill="#1E6DB6" />
+                                    </svg>
+                                </div>
+
                             </div>
                         </div>
                     </a>
                     <a href="https://www.youtube.com/watch?v=uJi5HI6IY20&list=PLaZ45lIDcATgXuTqpQXd2zt5zOTUHCp6O"
                         class="glightbox">
                         <div class="image image-small">
-                            <img src="assets/img/depo2.png" alt="Depoimento">
+                            <img src="assets/img/depo2.png" alt="Depoimento" class="img-depoimento">
                             <div class="texto">
                                 <p>O poder de conquistar
                                     Consórcio para imóveis</p>
-                                <img src="assets/img/player-depo.png" alt="Player">
+
+                                <div class="player">
+                                    <svg width="23" height="26" viewBox="0 0 23 26" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M23 13L0.500001 25.9904L0.500002 0.00961778L23 13Z" fill="#1E6DB6" />
+                                    </svg>
+                                </div>
+
                             </div>
                         </div>
                     </a>
@@ -358,22 +473,36 @@
                     <a href="https://www.youtube.com/watch?v=E7npP56S-2I&list=PLaZ45lIDcATgXuTqpQXd2zt5zOTUHCp6O&index=2"
                         class="glightbox">
                         <div class="image image-small">
-                            <img src="assets/img/depo3.png" alt="Depoimento">
+                            <img src="assets/img/depo3.png" alt="Depoimento" class="img-depoimento">
                             <div class="texto">
                                 <p>O poder de conquistar
                                     Consórcio para construir</p>
-                                <img src="assets/img/player-depo.png" alt="Player">
+
+                                <div class="player">
+                                    <svg width="23" height="26" viewBox="0 0 23 26" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M23 13L0.500001 25.9904L0.500002 0.00961778L23 13Z" fill="#1E6DB6" />
+                                    </svg>
+                                </div>
+
                             </div>
                         </div>
                     </a>
                     <a href="https://www.youtube.com/watch?v=H-l1Vij-a9M&list=PLaZ45lIDcATgXuTqpQXd2zt5zOTUHCp6O&index=3"
                         class="glightbox">
                         <div class="image image-large">
-                            <img src="assets/img/depo4.png" alt="Depoimento">
+                            <img src="assets/img/depo4.png" alt="Depoimento" class="img-depoimento">
                             <div class="texto">
                                 <p>O poder de conquistar
                                     Consórcio para casa própria</p>
-                                <img src="assets/img/player-depo.png" alt="Player">
+
+                                <div class="player">
+                                    <svg width="23" height="26" viewBox="0 0 23 26" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M23 13L0.500001 25.9904L0.500002 0.00961778L23 13Z" fill="#1E6DB6" />
+                                    </svg>
+                                </div>
+
                             </div>
                         </div>
                     </a>
@@ -387,9 +516,28 @@
     </section>
 
     <section class="numeros">
-        <div class="frase">
-            nossos números nossos números nossos números nossos números
-        </div>
+
+        <div class="m-scroll">
+            <div class="m-scroll__title">
+              <div>
+                <p>
+                    nossos números  
+                    nossos números  
+                    nossos números  
+                    nossos números  
+                    nossos números  
+                    nossos números  
+                    nossos números  
+                    nossos números  
+                    nossos números  
+                    nossos números  
+                    nossos números  
+                </p>                
+              </div>
+            </div>
+          </div>
+
+        <!-- <div class="frase">nossos números nossos números nossos números nossos números</div> -->
 
         <div class="informacoes">
             <div class="container">
@@ -397,7 +545,9 @@
                     <div class="col-lg-5">
                         <div class="card-numeros">
                             <div class="infos">
-                                <div class="numero">+200</div>
+                                <div class="texto-auxiliar">
+                                    + <div class="numero">200</div>
+                                </div>
                                 <p>Pontos de Vendas</p>
                             </div>
                             <div class="icone">
@@ -415,7 +565,9 @@
                         </div>
                         <div class="card-numeros">
                             <div class="infos">
-                                <div class="numero">R$1.91 Bi</div>
+                                <div class="texto-auxiliar">
+                                    <div class="numero">R$1.91 </div>Bi
+                                </div>
                                 <p>Créditos Comercializados</p>
                             </div>
                             <div class="icone">
@@ -424,7 +576,9 @@
                         </div>
                         <div class="card-numeros">
                             <div class="infos">
-                                <div class="numero">+158 mil</div>
+                                <div class="texto-auxiliar">
+                                    +<div class="numero"> 158 </div> mil
+                                </div>
                                 <p>Contemplações</p>
                             </div>
                             <div class="icone">
@@ -432,22 +586,22 @@
                             </div>
                         </div>
 
-                        <a href="#invista" class="btn-default">
-                            QUERO INVESTIR
-                        </a>
+                        <a href="#invista" class="btn-default">QUERO INVESTIR</a>
                     </div>
+
                 </div>
             </div>
         </div>
 
         <img src="assets/img/vetor3.png" alt="Vetor" class="vetor3">
-        <img src="assets/img/homem.png" alt="Vetor" class="homem">
+        <img src="assets/img/homem.png" alt="Vetor" class="homem wow fadeInUp">
     </section>
-    <footer>
+
+    <footer class="wow fadeIn">
         <div class="container-fluid">
             <div class="parte1">
                 <div>
-                    <a href="#">
+                    <a href="https://www.racon.com.br/" target="_blank">
                         <img src="assets/img/logo-footer.png" alt="Logo">
                     </a>
                 </div>
@@ -523,7 +677,7 @@
                     </div>
                 </div>
                 <div>
-                    <a href="#" target="_blank" class="logo-footer2">
+                    <a class="logo-footer2">
                         <img src="assets/img/logo-footer2.png" alt="Logo">
                     </a>
                 </div>
@@ -536,7 +690,7 @@
 
         <div class="bg-white">
             <div class="parte2">
-                <a href="#" target="_blank" class="logo-abac">
+                <a href="https://abac.org.br/" target="_blank" class="logo-abac">
                     <img src="assets/img/logo-footer3.png" alt="Logo">
                 </a>
                 <p>A Racon Consórcios é administrada pela Randon Administradora de Consórcios Ltda., empresa prestadora
