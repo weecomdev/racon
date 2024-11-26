@@ -1,7 +1,7 @@
 // Inicialização do Slick Slider
 $(document).ready(function () {
     new WOW().init();
-    
+
     $('.passos-slide').slick({
         dots: false,
         infinite: false,
@@ -175,18 +175,40 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-//Adiciona class no header ao dar scroll
+// Adiciona class no header ao dar scroll e verifica no carregamento da página
 document.addEventListener("DOMContentLoaded", function () {
     const header = document.getElementById("header");
 
-    window.addEventListener("scroll", () => {
+    // Função para verificar e aplicar a classe com base no scroll
+    const toggleHeaderClass = () => {
         if (window.scrollY > 50) { // Verifica se a página foi rolada mais de 50px
             header.classList.add("scrolled");
         } else {
             header.classList.remove("scrolled");
         }
-    });
+    };
+
+    // Adiciona o evento de scroll
+    window.addEventListener("scroll", toggleHeaderClass);
+
+    // Chama a função após um pequeno atraso para garantir que a posição seja identificada corretamente
+    setTimeout(toggleHeaderClass, 0);
 });
+
+
+// Verifica se a página está no topo ao carregar e adiciona a classe no header se necessário
+document.addEventListener("DOMContentLoaded", function () {
+    const header = document.getElementById("header");
+
+    // Verifica a posição do scroll ao carregar a página
+    if (window.scrollY > 0) {
+        header.classList.add("scrolled");
+    } else {
+        header.classList.remove("scrolled");
+    }
+});
+
+
 
 //animação dos números
 document.addEventListener("DOMContentLoaded", function () {

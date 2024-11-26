@@ -1,0 +1,107 @@
+/* thank page */
+#thank {
+    font-family: Panton;
+    position: relative;
+    isolation: isolate;
+    height: 100dvh;
+    background-color: #00152E;
+    overflow: hidden;
+}
+
+#thank .vetor1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 50%;
+}
+
+@media(max-width: 991px) {
+    #thank .vetor1 {
+        display: none;
+    }
+
+    .logo {
+        max-width: 90%;
+        margin: 0 auto;
+        display: flex;
+    }
+}
+
+#thank .vetor2 {
+    position: absolute;
+    top: 35%;
+    right: -18%;
+    max-width: 50%;
+    z-index: -1;
+}
+
+#thank .homem {
+    position: absolute;
+    bottom: -150px;
+    right: -10%;
+    max-width: 45%;
+}
+
+@media(max-width: 991px) {
+    #thank .vetor2,
+    #thank .homem {
+        display: none;
+    }
+}
+
+#thank nav {
+    padding-block: 68px 0;
+}
+
+@media (max-width: 992px) {
+    #thank nav {
+        padding-block: 47px 0;
+    }
+}
+
+#thank .title {
+    margin-block: auto;
+    translate: 0 -55px;
+}
+
+#thank h1 {
+    color: #FFF;
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 55px;
+    letter-spacing: -0.05em;
+}
+
+#thank h2 {
+    color: #fff;
+    font-size: 35px;
+    font-weight: 350;
+    line-height: 55px;
+    letter-spacing: -0.05em;
+    margin-bottom: 55px;
+}
+
+.btn-wrapper {
+    margin: 0 auto;
+    display: table;
+    text-decoration: none;
+    font-family: Panton;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    text-transform: uppercase;
+    color: #FFF;
+    padding: 21px;
+    min-width: 242px;
+    border-radius: 10px;
+    background-color: #006DC1;
+    transition: .3s ease-in;
+}
+
+.btn-wrapper:hover {
+    transition: .3s ease-in;
+    background-color: #00AEEB;
+}
