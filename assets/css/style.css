@@ -1448,6 +1448,9 @@ header .navbar .btn-header:hover {
         margin: 0;
     }
 }
+.numeros .informacoes .card-numeros .icone {
+    max-width: 77px;
+}
 
 .numeros .informacoes .btn-default {
     background-color: #F9D447;
