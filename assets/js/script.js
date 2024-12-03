@@ -133,6 +133,29 @@ document.addEventListener('DOMContentLoaded', function () {
 
         track.addEventListener('input', () => updateValues(track, output));
     });
+
+
+    document.querySelectorAll('.card-invista').forEach(card => {
+        card.addEventListener('click', function () {
+            const consorcioValue = this.getAttribute('data-consorcio');
+    
+            // Verifica qual formulário está visível (mobile ou desktop)
+            const isMobile = window.innerWidth <= 768;
+            const selectElement = isMobile 
+                ? document.querySelector('#mobile-consorcio') 
+                : document.querySelector('#desk-consorcio');
+    
+            // Atualiza o valor do select
+            selectElement.value = consorcioValue;
+    
+            // Redireciona para o formulário correspondente
+            const targetForm = isMobile 
+                ? document.querySelector('#mobile-form') 
+                : document.querySelector('#desk-form');
+    
+            targetForm.scrollIntoView({ behavior: 'smooth' });
+        });
+    });
 });
 
 // Seleciona todos os sliders (tracks) e suas tooltips correspondentes
@@ -208,8 +231,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
-
-
 //animação dos números
 document.addEventListener("DOMContentLoaded", function () {
     const counters = document.querySelectorAll(".numero");
@@ -271,6 +292,8 @@ document.addEventListener("DOMContentLoaded", function () {
         observer.observe(counter);
     });
 });
+
+
 
 
 

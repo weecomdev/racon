@@ -170,7 +170,7 @@
         <div class="row d-flex d-lg-none">
             <div class="col-lg-5">
                 <div class="form wow fadeIn">
-                    <form action="thank.html" method="post">
+                    <form action="thank.html" method="post" id="mobile-form">
                         <p>
                             <strong> Informe seus dados</strong> para entrarmos<br> em contato com você:
                         </p>
@@ -184,8 +184,11 @@
                         <select name="cidade" id="cidade">
                             <option value="cidade" selected>Cidade</option>
                         </select>
-                        <select name="consorcio" id="consorcio">
-                            <option value="consorcio" selected>Selecione o Consórcio</option>
+                        <select name="consorcio" id="mobile-consorcio">
+                            <option value="consorcio" selected disabled>Selecione o Consórcio</option>
+                            <option value="44">Consórcio para Imóveis</option>
+                            <option value="43">Consórcio para Veículos</option>
+                            <option value="50">Consórcio Imóveis Prime</option>
                         </select>
                         <label for="valor">Valor do Investimento</label>
                         <div class="wrapper">
@@ -236,7 +239,7 @@
             <div class="col-lg-5">
 
                 <div class="form wow fadeInLeft">
-                    <form action="thank.html" method="post">
+                    <form action="thank.html" method="post" id="desk-form">
                         <p>
                             <strong> Informe seus dados</strong> para entrarmos<br> em contato com você:
                         </p>
@@ -250,8 +253,11 @@
                         <select name="cidade" id="cidade">
                             <option value="cidade" selected>Cidade</option>
                         </select>
-                        <select name="consorcio" id="consorcio">
-                            <option value="consorcio" selected>Selecione o Consórcio</option>
+                        <select name="consorcio" id="desk-consorcio">
+                            <option value="consorcio" selected disabled>Selecione o Consórcio</option>
+                            <option value="44">Consórcio para Imóveis</option>
+                            <option value="43">Consórcio para Veículos</option>
+                            <option value="50">Consórcio Imóveis Prime</option>
                         </select>
                         <label for="valor">Valor do Investimento</label>
                         <div class="wrapper">
@@ -369,38 +375,39 @@
         <div class="contianer-fluid">
             <div class="card-info">
                 <div class="row">
+                    <!-- Card 1 -->
                     <div class="col-lg-4">
-                        <a href="#invista">
-                            <div class="card-invista wow fadeInUp" data-wow-delay="0.5s">
-                                <img src="assets/img/card1.png" alt="Card">
-                                <a href="#invista" class="btn-default">
-                                    INVISTA AGORA
-                                </a>
-                            </div>
-                        </a>
+                        <div class="card-invista wow fadeInUp" data-wow-delay="0.5s" data-consorcio="43">
+                            <a href="#invista">
+                                <img src="https://image.crm.racon.com.br/lib/fe2f117371640478731273/m/1/79639e17-4ee0-4100-9135-d9fafb19ef4b.png"
+                                    alt="Card">
+                                <a href="#invista" class="btn-default">INVISTA AGORA</a>
+                            </a>
+                        </div>
                     </div>
+                    <!-- Card 2 -->
                     <div class="col-lg-4">
-                        <a href="#invista">
-                            <div class="card-invista wow fadeInUp" data-wow-delay="0.6s">
-                                <img src="assets/img/card2.png" alt="Card">
-                                <a href="#invista" class="btn-default">
-                                    INVISTA AGORA
-                                </a>
-                            </div>
-                        </a>
+                        <div class="card-invista wow fadeInUp" data-wow-delay="0.6s" data-consorcio="44">
+                            <a href="#invista">
+                                <img src="https://image.crm.racon.com.br/lib/fe2f117371640478731273/m/1/70266e31-6aba-4ac0-803c-87ea5bebf38e.png"
+                                    alt="Card">
+                                <a href="#invista" class="btn-default">INVISTA AGORA</a>
+                            </a>
+                        </div>
                     </div>
+                    <!-- Card 3 -->
                     <div class="col-lg-4">
-                        <a href="#invista">
-                            <div class="card-invista wow fadeInUp" data-wow-delay="0.7s">
-                                <img src="assets/img/card3.png" alt="Card">
-                                <a href="#invista" class="btn-default">
-                                    INVISTA AGORA
-                                </a>
-                            </div>
-                        </a>
+                        <div class="card-invista wow fadeInUp" data-wow-delay="0.7s" data-consorcio="50">
+                            <a href="#invista">
+                                <img src="https://image.crm.racon.com.br/lib/fe2f117371640478731273/m/1/00c822dc-3070-408c-856f-afdfd41f39b5.png"
+                                    alt="Card">
+                                <a href="#invista" class="btn-default">INVISTA AGORA</a>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
+
         </div>
 
         <div class="vetor1">
@@ -449,8 +456,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="https://www.youtube.com/watch?v=VcbwNjtYabY"
-                        class="glightbox">
+                    <a href="https://www.youtube.com/watch?v=VcbwNjtYabY" class="glightbox">
                         <div class="image image-small">
                             <img src="assets/img/depo2.png" alt="Depoimento" class="img-depoimento">
                             <div class="texto">
@@ -470,8 +476,7 @@
                 </div>
 
                 <div class="column">
-                    <a href="https://www.youtube.com/watch?v=sGXhSU4tZe0"
-                        class="glightbox">
+                    <a href="https://www.youtube.com/watch?v=sGXhSU4tZe0" class="glightbox">
                         <div class="image image-small">
                             <img src="assets/img/depo3.png" alt="Depoimento" class="img-depoimento">
                             <div class="texto">
@@ -488,8 +493,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="https://www.youtube.com/watch?v=9c34Jc6ZeEE"
-                        class="glightbox">
+                    <a href="https://www.youtube.com/watch?v=9c34Jc6ZeEE" class="glightbox">
                         <div class="image image-large">
                             <img src="assets/img/depo4.png" alt="Depoimento" class="img-depoimento">
                             <div class="texto">
@@ -684,7 +688,8 @@
             </div>
 
             <div class="politica">
-                Acesse a nossa <a href="https://www.racon.com.br/politica-de-privacidade" target="_blank">Politica de Privacidade</a>.
+                Acesse a nossa <a href="https://www.racon.com.br/politica-de-privacidade" target="_blank">Politica de
+                    Privacidade</a>.
             </div>
         </div>
 

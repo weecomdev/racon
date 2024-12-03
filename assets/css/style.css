@@ -431,6 +431,7 @@ header .navbar .btn-header:hover {
     -moz-appearance: none;
     background-image: url("../img/seta-select.png");
     background-repeat: no-repeat;
+    background-size: auto;
     background-position-x: 95%;
     background-position-y: 50%;
 }
